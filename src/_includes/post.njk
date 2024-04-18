@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/assets/main.css">
+  <title>{{title}}</title>
+</head>
+<body>
+ 
+
+ <div class="flex flex-col justify-center content-center p-32 h-screen bg-red-300">
+   <div class="goback mb-4 hover:white">
+    <a href="/">&larr; Go back</a>
+  </div> 
+  <div class="container bg-white p-16 rounded-lg self-center">
+    
+      <header class="mb-7 flex flex-col">
+        <h1 class="text-3xl font-bold mr-10">{{ title }}</h1>
+        <p>by {{authour}} on <time datetime="{{date | readableDate}}">{{date | readableDate}}</time></p>
+
+      </header>
+      
+     
+      <main class="">
+
+        <p>{{ content | safe }}</p>
+        
+      </main>
+       </div>
+    </div>
+</body>
+</html>
