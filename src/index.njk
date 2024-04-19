@@ -10,7 +10,7 @@ eleventyNavigation:
   <h3 class="text-2xl jersey">Latest Posts</h3>
 </div>
 <div class="mt-2 jersey">
-  {% for post in collections.post %}
+  {% for post in collections.post | reverse%}
   <article
     class="my-8 stroke-black rounded p-6 bg-yellow hover:shadow-[0px_0px_0px_5px_rgba(0,0,0,1)] shadow-[0px_0px_0px_3px_rgba(0,0,0,1)] text-red"
   >

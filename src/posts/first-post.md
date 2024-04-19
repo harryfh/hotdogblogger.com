@@ -1,6 +1,6 @@
 ---
 title: First Post
-date: 2016-01-01
+date: 2024-04-15
 author: HotDogBlogger.com
 description: The first post from the hotdogblogger.com team!
 ---

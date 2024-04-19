@@ -1,6 +1,6 @@
 ---
 title: The Hot Dog That Changed My Life
-date: 2016-01-01
+date: 2024-04-19
 author: Mustard Meister
 description: The first post from the hotdogblogger.com team!
 ---
