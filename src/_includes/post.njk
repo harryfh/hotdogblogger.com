@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
-        <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
       rel="stylesheet"
     />
@@ -14,12 +14,12 @@
     />
     <title>{{title}}</title>
   </head>
-  <body class="h-full bg-yellow">
+  <body class="min-h-screen bg-brown-2">
     {% include "./components/nav.njk" %}
 
-    <div
-      class="flex flex-col min-h-max align-center justify-center gap-3 p-32"
-    >
+    <div class="flex justify-center  bg-brown-2 gap-3 p-16">
+      <div class="flex flex-col rounded  max-w-5xl bg-yellow p-10 mt-10">
+
       <div class="goback mb-4 hover: cursor-pointer hover:text-red">
         <a href="/">&larr; Go back</a>
       </div>
@@ -34,10 +34,13 @@
         </p>
       </header>
 
-      <main class="h-full flex flex-col gap-3">
+      <main class="flex flex-col gap-6">
         <p>{{ content | safe }}</p>
       </main>
     </div>
-    
+  </div>
+    <div
+      class="flex bottom-0 absolute items-center w-full text-black justify-between flex-wrap px-5 py-5 bg-brown-1 jersey border-t-4 gap-5 border-black"
+    ></div>
   </body>
 </html>
