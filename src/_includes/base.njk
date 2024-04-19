@@ -8,21 +8,32 @@
       href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap"
+      rel="stylesheet"
+    />
     <title>{{ title }}</title>
   </head>
-  <body class="sans">
+  <body class="sans h-full">
     {% include "./components/nav.njk" %}
-    <div
-      class="flex flex-col jersey items-center p-32 h-screen bg-yellow"
-    >
-      <img
-        class="w-32"
-        src="https://media.tenor.com/tbLD5H8CIO8AAAAi/hot-dog-hot-dogs.gif"
-      />
-      <header class="mb-7 ">
-        <h1 class="text-5xl text-red font-bold">{{ title }}</h1>
-      </header>
-      <main class="text-2xl ">{{ content | safe }}</main>
+    <div class="flex flex-col items-center py-px-32 bg-brown-1">
+      <div class="flex flex-col items-center p-32  max-w-138 bg-brown-2">
+        <img
+          class="w-32"
+          src="https://media.tenor.com/tbLD5H8CIO8AAAAi/hot-dog-hot-dogs.gif"
+        />
+        <header class="mb-7">
+          <h1
+            class="text-5xl jersey [text-shadow:_-3px_0px_0px_rgb(255_217_102_/_100%),_3px_0px_0px_rgb(255_217_102_/_100%),_1px_-3px_0px_rgb(255_217_102_/_100%),_1px_3px_0px_rgb(255_217_102_/_100%)] text-red-2 font-bold"
+          >
+            {{ title }}
+          </h1>
+        </header>
+
+      
+   
+    <main class="max-w-96">{{ content | safe }}</main>
+     </div>
     </div>
   </body>
 </html>
