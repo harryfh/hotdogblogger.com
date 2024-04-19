@@ -14,11 +14,10 @@
     />
     <title>{{title}}</title>
   </head>
-  <body class="min-h-screen bg-brown-2">
+  <body class="min-h-screen ">
     {% include "./components/nav.njk" %}
-
-    <div class="flex justify-center  bg-brown-2 gap-3 p-16">
-      <div class="flex flex-col rounded  max-w-5xl bg-yellow p-10 mt-10">
+    <div class="flex justify-center align-center min-h-screen bg-brown-2 gap-3 p-16">
+      <div class="flex flex-col rounded max-w-5xl h-fit bg-yellow p-10 mt-10">
 
       <div class="goback mb-4 hover: cursor-pointer hover:text-red">
         <a href="/">&larr; Go back</a>
@@ -34,13 +33,13 @@
         </p>
       </header>
 
-      <main class="flex flex-col gap-6">
+      <main class="flex flex-col h-full gap-6">
         <p>{{ content | safe }}</p>
       </main>
     </div>
   </div>
     <div
-      class="flex bottom-0 absolute items-center w-full text-black justify-between flex-wrap px-5 py-5 bg-brown-1 jersey border-t-4 gap-5 border-black"
+      class="flex bottom-0 sticky items-center w-full text-black justify-between flex-wrap px-5 py-5 bg-brown-1 jersey border-t-4 gap-5 border-black"
     ></div>
   </body>
 </html>

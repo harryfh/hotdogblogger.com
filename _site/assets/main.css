@@ -507,9 +507,6 @@ video {
 .fixed {
   position: fixed;
 }
-.absolute {
-  position: absolute;
-}
 .sticky {
   position: sticky;
 }
@@ -538,11 +535,11 @@ video {
 .mr-10 {
   margin-right: 2.5rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
 .mt-10 {
   margin-top: 2.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .inline-block {
   display: inline-block;
@@ -556,6 +553,17 @@ video {
 .h-full {
   height: 100%;
 }
+.h-screen {
+  height: 100vh;
+}
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.max-h-fit {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -565,17 +573,11 @@ video {
 .w-full {
   width: 100%;
 }
-.max-w-96 {
-  max-width: 24rem;
-}
 .max-w-5xl {
   max-width: 64rem;
 }
 .cursor-pointer {
   cursor: pointer;
-}
-.scroll-mt-10 {
-  scroll-margin-top: 2.5rem;
 }
 .flex-col {
   flex-direction: column;
@@ -592,26 +594,20 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
 .gap-5 {
   gap: 1.25rem;
 }
-.gap-10 {
-  gap: 2.5rem;
-}
-.gap-4 {
-  gap: 1rem;
+.gap-6 {
+  gap: 1.5rem;
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-9 {
-  gap: 2.25rem;
-}
-.gap-6 {
-  gap: 1.5rem;
 }
 .self-center {
   align-self: center;
@@ -637,9 +633,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 217 102 / var(--tw-bg-opacity));
 }
-.bg-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(170 0 0 / var(--tw-bg-opacity));
+.p-10 {
+  padding: 2.5rem;
 }
 .p-16 {
   padding: 4rem;
@@ -649,12 +644,6 @@ video {
 }
 .p-6 {
   padding: 1.5rem;
-}
-.p-5 {
-  padding: 1.25rem;
-}
-.p-10 {
-  padding: 2.5rem;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -735,56 +724,11 @@ video {
   --tw-shadow-colored: 0px 0px 0px 3px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.\[text-shadow\:_-1px_3px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: -1px 3px 0px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_-2px_2px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: -2px 2px 0px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_-2px_3px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: -2px 3px 0px rgb(255 217 102 / 100%);
-}
 .\[text-shadow\:_-3px_0px_0px_rgb\(255_217_102_\/_100\%\)\2c _3px_0px_0px_rgb\(255_217_102_\/_100\%\)\2c _1px_-3px_0px_rgb\(255_217_102_\/_100\%\)\2c _1px_3px_0px_rgb\(255_217_102_\/_100\%\)\] {
   text-shadow: -3px 0px 0px rgb(255 217 102 / 100%), 3px 0px 0px rgb(255 217 102 / 100%), 1px -3px 0px rgb(255 217 102 / 100%), 1px 3px 0px rgb(255 217 102 / 100%);
 }
-.\[text-shadow\:_-3px_0px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: -3px 0px 0px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_-3px_3px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: -3px 3px 0px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_1px_1px_10px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 1px 1px 10px rgb(255 217 102 / 100%);
-}
 .\[text-shadow\:_1px_1px_3px_rgb\(255_217_102_\/50\%\)\] {
   text-shadow: 1px 1px 3px rgb(255 217 102 /50%);
-}
-.\[text-shadow\:_1px_1px_3px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 1px 1px 3px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_1px_1px_5px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 1px 1px 5px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_2px_1px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 2px 1px 0px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_2px_1px_10px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 2px 1px 10px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_2px_1px_15px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 2px 1px 15px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_2px_2px_10px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 2px 2px 10px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_2px_3px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 2px 3px 0px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_3px_-2px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 3px -2px 0px rgb(255 217 102 / 100%);
-}
-.\[text-shadow\:_3px_2px_0px_rgb\(255_217_102_\/_100\%\)\] {
-  text-shadow: 3px 2px 0px rgb(255 217 102 / 100%);
 }
 
 .jersey {
