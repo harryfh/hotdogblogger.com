@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+        <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap"
+      rel="stylesheet"
+    />
     <title>{{title}}</title>
   </head>
   <body class="h-full bg-yellow">
+    {% include "./components/nav.njk" %}
+
     <div
-      class="flex flex-col h-full align-center justify-center gap-3 p-16 "
+      class="flex flex-col min-h-max align-center justify-center gap-3 p-32"
     >
       <div class="goback mb-4 hover: cursor-pointer hover:text-red">
         <a href="/">&larr; Go back</a>

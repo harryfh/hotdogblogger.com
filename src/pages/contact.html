@@ -1,0 +1,47 @@
+---
+title: Blog Submissions
+layout: base.njk
+permalink: /Contact/
+eleventyNavigation:
+  key: Submit a Blog
+  order: 2
+---
+
+<div class="h-full w-full">
+  <div class="goback mb-4 hover: cursor-pointer hover:text-red">
+    <a href="/">&larr; Go back</a>
+  </div>
+
+  <section class="flex align-center justify-center h-full p-16 bg-yellow">
+    <form
+      name="contact"
+      class="flex text-xl flex-col jersey h-full text-red justify-center align-center gap-5"
+      netlify
+    >
+      <p>
+        <label
+          >Name <input class="flex w-full rounded" type="text" name="name"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Email <input class="flex w-full rounded" type="email" name="email"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Blog Entry
+          <textarea
+            class="w-full rounded"
+            rows="50"
+            cols="50"
+            name="message"
+          ></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </section>
+</div>

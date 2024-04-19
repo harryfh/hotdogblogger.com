@@ -14,9 +14,9 @@
     />
     <title>hotdogblogger.com</title>
   </head>
-  <body class="sans h-full">
+  <body class="min-h-screen">
     
-<nav class="flex items-center text-red justify-between flex-wrap px-5 py-3 bg-yellow jersey border-b-4 gap-5 border-red">
+<nav class="flex fixed top-0 items-center sticky text-red justify-between flex-wrap px-5 py-3 bg-yellow jersey border-b-4 gap-5 border-red">
   <a href="/" class="font-semibold text-2xl tracking-tight">hotdogblogger.com</a>
 
   
@@ -44,13 +44,24 @@
         </a>
       </li>
     
+      <li class="inline">
+        <a
+          href="/Contact/"
+          class="uppercase text-2xl py-1 px-2 rounded inline-block
+          
+            text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700
+          ">
+          Submit a Blog
+        </a>
+      </li>
+    
 
   </ul>
 
 
 </nav>
-    <div class="flex flex-col items-center py-px-16 bg-brown-1">
-      <div class="flex flex-col items-center p-32 mx-16 max-w-full bg-brown-2">
+    <div class="flex flex-col items-center py-px-16 h-full bg-brown-1">
+      <div class="flex flex-col items-center p-32 mx-16 h-full bg-brown-2">
         <img
           class="w-32"
           src="https://media.tenor.com/tbLD5H8CIO8AAAAi/hot-dog-hot-dogs.gif"

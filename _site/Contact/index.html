@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap"
       rel="stylesheet"
     />
-    <title>About</title>
+    <title>Blog Submissions</title>
   </head>
   <body class="min-h-screen">
     
@@ -38,7 +38,7 @@
           href="/about/"
           class="uppercase text-2xl py-1 px-2 rounded inline-block
           
-            bg-black text-white
+            text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700
           ">
           About
         </a>
@@ -49,7 +49,7 @@
           href="/Contact/"
           class="uppercase text-2xl py-1 px-2 rounded inline-block
           
-            text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700
+            bg-black text-white
           ">
           Submit a Blog
         </a>
@@ -70,42 +70,49 @@
           <h1
             class="text-5xl jersey [text-shadow:_-3px_0px_0px_rgb(255_217_102_/_100%),_3px_0px_0px_rgb(255_217_102_/_100%),_1px_-3px_0px_rgb(255_217_102_/_100%),_1px_3px_0px_rgb(255_217_102_/_100%)] text-red-2 font-bold"
           >
-            About
+            Blog Submissions
           </h1>
         </header>
 
       
    
     <main >
-<div class="goback mb-4 hover: cursor-pointer hover:text-red">
-  <a href="/">&larr; Go back</a>
-</div>
+<div class="h-full w-full">
+  <div class="goback mb-4 hover: cursor-pointer hover:text-red">
+    <a href="/">&larr; Go back</a>
+  </div>
 
-<div class="flex align-center justify-center h-full p-16 bg-yellow rounded">
-  <section class="flex text-xl flex-col jersey text-red justify-center gap-3">
-    <h1>We are Hotdogblogger.com</h1>
-    <h2>A Melancholy Ode to the Frankfurter Fiend</h2>
-
-    <p>
-      Within this shadowed realm, dear wanderer, you shall find no mere
-      gustatory guide to the common dog of hotness. Nay! Here, we delve into the
-      enigmatic essence of this encased meat, a testament to both fleeting joy
-      and the inescapable march of time.
-    </p>
-
-    <p>
-      We are a fellowship of the forlorn, gourmands of the grotesque, bound by
-      an insatiable yearning for the frankfurter's curious allure. We chronicle
-      the greasy stains upon weathered paper napkins, the mournful cries of
-      mustard abandoned, the echoes of buns consumed.
-    </p>
-
-    <p>
-      Join us, traveler. Partake in our dissection of flavors both haunting and
-      delightful. From the hallowed halls of chili-drenched diners to the
-      forgotten vendors veiled in twilight, we shall unearth the unsettling
-      beauty that lies within the humble hot dog.
-    </p>
+  <section class="flex align-center justify-center h-full p-16 bg-yellow">
+    <form
+      name="contact"
+      class="flex text-xl flex-col jersey h-full text-red justify-center align-center gap-5"
+      netlify
+    >
+      <p>
+        <label
+          >Name <input class="flex w-full rounded" type="text" name="name"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Email <input class="flex w-full rounded" type="email" name="email"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Blog Entry
+          <textarea
+            class="w-full rounded"
+            rows="50"
+            cols="50"
+            name="message"
+          ></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
   </section>
 </div>
 </main>
