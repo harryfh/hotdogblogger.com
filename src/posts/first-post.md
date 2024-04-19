@@ -1,7 +1,8 @@
 ---
 title: First Post
 date: 2016-01-01
-authour: HotDogBlogger.com
+author: HotDogBlogger.com
+description: The first post from the hotdogblogger.com team!
 ---
 
 🌭 Welcome to HotDogBlogger.com! 🌭
